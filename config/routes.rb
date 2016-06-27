@@ -41,4 +41,8 @@ Rails.application.routes.draw do
   get '/test', to: 'test#show'
   get '/test/result', to: 'test#result'
   get "/", to: "index#index"
+
+
+  get "/hello_react/1", to: "hello_react#page_1"
+  post "/hello_react/create_comments", to: "hello_react#create_comments"
 end
